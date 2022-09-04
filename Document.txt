@@ -1,0 +1,9 @@
+Eureka Server
+
+Cloud Config(Eureka Client)
+
+API GateWay(Eureka Client)
+
+User Microservice(Eureka Client)(Cloud Config Client)
+
+Department Mircoservice(Eureka Client)

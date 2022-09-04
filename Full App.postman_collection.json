@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "8348a342-bfe7-4167-ab28-e49e0708a2ac",
+		"name": "Full App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Gateway User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9191/user/get/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"user",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Gateway",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"firstName\":\"Jay\",\r\n    \"lastName\":\"Patel\",\r\n    \"email\":\"jay@gmail.com\",\r\n    \"departmentId\":1\r\n\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/user/save",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"user",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Gateway Department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9091/department/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"department",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Gateway",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"departmentId\":1,\r\n    \"departMentName\":\"IT\",\r\n    \"departMentAddress\":\"Pune Office\",\r\n    \"departMentCode\":\"IT01\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/department/",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"department",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
